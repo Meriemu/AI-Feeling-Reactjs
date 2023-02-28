@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Meriemu.github.io/AI-Feeling-reactjs",
+  "homepage": "https://Meriemu.github.io/AI-Feeling-Reactjs",
   "name": "detect-human-feeling--reactjs",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && mv build/generate_sentiment.js build/static/",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

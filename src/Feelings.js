@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 // import generateSentiment from './api/generate_sentiment.js';
+import axios from 'axios';
 
 const Feelings = () =>{
   const [result, setResult] = useState();
   const [sentimentInput, setSentimentInput] = useState('');
-  const URL = 'http://localhost:3003';
+
+  // const URL = 'https://meriemu.github.io/AI-Feeling-Reactjs';
+  // const URL = 'http://localhost:3003';
 
   const handleSubmit = async event => {
     event.preventDefault();
-  
+    const URL = '/generate_sentiment.js';
     try {
-      const response = await fetch(`${URL}/generate_sentiment`, {
+      const response = await fetch(URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ sentimentInput: sentimentInput }),
       });
-  
+    
       const { result } = await response.json();
-  
+    
       setResult( result );
       setSentimentInput('');
     } catch (error) {
