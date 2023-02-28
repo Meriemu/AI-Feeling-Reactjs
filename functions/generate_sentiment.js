@@ -1,5 +1,5 @@
 import { Configuration, OpenAIApi } from "openai";
-import { config } from 'dotenv';
+import { config } from "dotenv";
 config();
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async function (req, res) {
-  const sentiment = req.body.sentimentInput || '';
+  const sentiment = req.body.sentimentInput || "";
 
   try {
     const completion = await openai.createCompletion({
@@ -32,7 +32,7 @@ export default async function (req, res) {
       console.error(`Error with OpenAI API request: ${error.message}`);
       res.status(500).json({
         error: {
-          message: 'An error occurred during your request.',
+          message: "An error occurred during your request.",
         }
       });
     }
