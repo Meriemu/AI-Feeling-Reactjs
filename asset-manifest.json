@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/AI-Feeling-Reactjs/static/css/main.ba6a7b9a.css",
-    "main.js": "/AI-Feeling-Reactjs/static/js/main.6a499591.js",
+    "main.css": "/AI-Feeling-Reactjs/static/css/main.f5ba21f6.css",
+    "main.js": "/AI-Feeling-Reactjs/static/js/main.d91de7fb.js",
     "index.html": "/AI-Feeling-Reactjs/index.html",
-    "static/media/loading-icon.svg": "/AI-Feeling-Reactjs/static/media/loading-icon.cec278a871ffe3926603.svg",
-    "main.ba6a7b9a.css.map": "/AI-Feeling-Reactjs/static/css/main.ba6a7b9a.css.map",
-    "main.6a499591.js.map": "/AI-Feeling-Reactjs/static/js/main.6a499591.js.map"
+    "static/media/loading-icon4.svg": "/AI-Feeling-Reactjs/static/media/loading-icon4.992c0f9307138d0a9204.svg",
+    "main.f5ba21f6.css.map": "/AI-Feeling-Reactjs/static/css/main.f5ba21f6.css.map",
+    "main.d91de7fb.js.map": "/AI-Feeling-Reactjs/static/js/main.d91de7fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba6a7b9a.css",
-    "static/js/main.6a499591.js"
+    "static/css/main.f5ba21f6.css",
+    "static/js/main.d91de7fb.js"
   ]
 }
