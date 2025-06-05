@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/AI-Feeling-Reactjs/static/css/main.ef8b59b0.css",
-    "main.js": "/AI-Feeling-Reactjs/static/js/main.bd0851e1.js",
+    "main.css": "/AI-Feeling-Reactjs/static/css/main.ba6a7b9a.css",
+    "main.js": "/AI-Feeling-Reactjs/static/js/main.6a499591.js",
     "index.html": "/AI-Feeling-Reactjs/index.html",
-    "main.ef8b59b0.css.map": "/AI-Feeling-Reactjs/static/css/main.ef8b59b0.css.map",
-    "main.bd0851e1.js.map": "/AI-Feeling-Reactjs/static/js/main.bd0851e1.js.map"
+    "static/media/loading-icon.svg": "/AI-Feeling-Reactjs/static/media/loading-icon.cec278a871ffe3926603.svg",
+    "main.ba6a7b9a.css.map": "/AI-Feeling-Reactjs/static/css/main.ba6a7b9a.css.map",
+    "main.6a499591.js.map": "/AI-Feeling-Reactjs/static/js/main.6a499591.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef8b59b0.css",
-    "static/js/main.bd0851e1.js"
+    "static/css/main.ba6a7b9a.css",
+    "static/js/main.6a499591.js"
   ]
 }
