@@ -79,18 +79,8 @@ const Feelings = () => {
           Ok !
         </button>
       </form>
-      {loader ? (
-        // <p className="feeling__loader"></p>
-        <p></p>
-      ) : (
-        result && <div className="feeling__result"> {result}</div>
-      )}
-      {/* {result && (
-        <>
-          <p className="feeling__loader"></p>{" "}
-          <div className="feeling__result"> {result}</div>
-        </>
-      )} */}
+      {loader && <p className="feeling__loader"></p>}
+      {<div className="feeling__result">{!loader && result}</div>}
     </div>
   );
 };

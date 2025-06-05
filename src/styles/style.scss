@@ -153,10 +153,10 @@ body {
   color: white;
   font-size: 2rem;
   font-family: "Henny Penny", system-ui;
-
   display: flex;
   justify-content: center;
   margin-top: 4rem;
+  min-height: 3rem;
 
   @media (min-width: 768px) {
     font-size: 3rem;
@@ -179,8 +179,9 @@ body {
 
 .feeling__loader {
   position: absolute;
-  background-image: url(../images/loading-icon.svg);
+  background-image: url(../images/loading-icon4.svg);
   background-repeat: no-repeat;
+  top: 30%;
   left: 50%;
   right: 50%;
   display: block;
