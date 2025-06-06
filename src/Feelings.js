@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-import {randomFeelings} from "./randomFeelings";
+import {randomFeelings} from "./randomFeelings.js";
 
 const Feelings = () => {
   const [result, setResult] = useState();
@@ -12,37 +12,40 @@ const Feelings = () => {
     setLoader(true);
 
     try {
-      const response = await axios.post(
-        "https://api-inference.huggingface.co/models/cardiffnlp/twitter-xlm-roberta-base-sentiment",
-        {
-          inputs: sentimentInput,
-        },
-        {
-          headers: {
-            Authorization: "Bearer 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",
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
+      const response = await axios.post("ai-feeling-reactjs.vercel.app/sentiment", {
+        inputs: sentimentInput,
+      });
+      
+     
+      const labels = res => {
+        switch(res) {
+          case "LABEL_0" :
+            return "negative";
+          case "LABEL_1" :
+            return "neutral";
+          case "LABEL_2" :
+            return "positive"
+          default: return "Unknown feeling"
         }
-      );
-      const labels = response.data[0].reduce(
+      } 
+      const res = response.data[0].reduce(
         (accu, lab) => accu.score > lab.score && accu
       ).label;
-
+  
       const randomDataResult =
-        labels === "negative"
+        labels(res) === "negative"
           ? randomFeelings.Negative[
               Math.floor(Math.random() * randomFeelings.Negative.length)
             ]
-          : labels === "positive"
+          : labels(res) === "positive"
           ? randomFeelings.Positive[
               Math.floor(Math.random() * randomFeelings.Positive.length)
             ]
-          : labels === "neutral"
+          : labels(res) === "neutral"
           ? randomFeelings.Neutral[
               Math.floor(Math.random() * randomFeelings.Neutral.length)
             ]
-          : "NADA " + labels[0];
+          : "NADA " + labels(res)[0];
 
       setResult(randomDataResult);
     } catch (error) {
