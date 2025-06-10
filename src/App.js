@@ -1,4 +1,4 @@
-import Feelings from "../src/Feelings.js";
+import Feelings from "../src/Feelings.jsx";
 import "./styles/style.scss";
 
 function App() {

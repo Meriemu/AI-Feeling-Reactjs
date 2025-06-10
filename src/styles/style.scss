@@ -46,7 +46,7 @@ body {
   position: absolute;
   top: calc($width/15);
   color: $primary-color;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-weight: 400;
   cursor: text;
   transition: 0.25s ease;
@@ -66,7 +66,7 @@ body {
   &:valid {
     ~ label {
       top: 0;
-      font-family: Roboto;
+      font-family: "Roboto";
       font-weight: 700;
       color: $secondary-color;
     }
@@ -75,7 +75,7 @@ body {
     outline: none;
     ~ label {
       top: 0;
-      font-family: Roboto;
+      font-family: "Roboto";
       font-weight: 700;
       color: $secondary-color;
     }
@@ -195,9 +195,13 @@ body {
   -webkit-background-clip: text;
   color: #600594;
   filter: drop-shadow(0 0 #ff5252);
-  font-size: 14px;
+  font-size: 10px;
   position: absolute;
   right: 10px;
   text-shadow: 0 10px 10px linear-gradient(90deg, $primary-color, #ff5252);
   top: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }
