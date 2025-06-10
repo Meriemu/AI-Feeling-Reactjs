@@ -13,7 +13,8 @@ const Feelings = () => {
 
     try {
       const response = await axios.post(
-        "https://ai-feeling-reactjs.vercel.app/sentiment",
+        "/sentiment",
+        // "https://ai-feeling-reactjs.onrender.com/sentiment",
         {
           inputs: sentimentInput,
         }

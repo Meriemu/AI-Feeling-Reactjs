@@ -31,7 +31,7 @@ app.post("/sentiment", async (req, res) => {
 
     res.json(response.data);
   } catch (error) {
-    console.error("Error calling Hugging Face API:", error.message);
+    console.error("Error calling Hugging Face API:", error.response.data);
     res.status(500).json({error: "API request failed"});
   }
 });
