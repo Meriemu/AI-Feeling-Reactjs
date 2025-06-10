@@ -12,26 +12,29 @@ const Feelings = () => {
     setLoader(true);
 
     try {
-      const response = await axios.post("ai-feeling-reactjs.vercel.app/sentiment", {
-        inputs: sentimentInput,
-      });
-      
-     
-      const labels = res => {
-        switch(res) {
-          case "LABEL_0" :
-            return "negative";
-          case "LABEL_1" :
-            return "neutral";
-          case "LABEL_2" :
-            return "positive"
-          default: return "Unknown feeling"
+      const response = await axios.post(
+        "https://ai-feeling-reactjs.vercel.app/sentiment",
+        {
+          inputs: sentimentInput,
         }
-      } 
+      );
+
+      const labels = (res) => {
+        switch (res) {
+          case "LABEL_0":
+            return "negative";
+          case "LABEL_1":
+            return "neutral";
+          case "LABEL_2":
+            return "positive";
+          default:
+            return "Unknown feeling";
+        }
+      };
       const res = response.data[0].reduce(
         (accu, lab) => accu.score > lab.score && accu
       ).label;
-  
+
       const randomDataResult =
         labels(res) === "negative"
           ? randomFeelings.Negative[
