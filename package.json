@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Meriemu.github.io/AI-Feeling-Reactjs",
+  "homepage": ".",
   "name": "ai-detect-feelings",
   "version": "0.1.0",
   "private": true,
@@ -45,6 +45,6 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }, 
+  },
     "type": "module"
 }
