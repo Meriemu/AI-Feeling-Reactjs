@@ -1,6 +1,6 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/sentiment", "destination": "/api/sentiment" }
+    { "source": "/sentiment", "destination": "/api/server" }
   ]
 }
