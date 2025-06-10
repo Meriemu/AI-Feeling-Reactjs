@@ -12,7 +12,7 @@ const Feelings = () => {
     setLoader(true);
 
     try {
-      coSresponse = await axios.post(
+      const response = await axios.post(
         "/sentiment",
         // "https://ai-feeling-reactjs.onrender.com/sentiment",
         {
