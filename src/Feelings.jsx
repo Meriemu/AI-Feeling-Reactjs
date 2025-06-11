@@ -50,9 +50,8 @@ const Feelings = () => {
 
       setResult(randomDataResult);
     } catch (error) {
-      console.error("ERROR", error);
-      setResult(`ERROR: ${error.message}`);
-
+      console.error("ERROR :", error);
+      setResult(`Error:  ${error.message}`);
     } finally {
       setLoader(false);
     }
