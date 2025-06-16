@@ -13,7 +13,7 @@ const Feelings = () => {
 
     try {
       const response = await axios.post(
-        "/sentiment",
+        "api/sentiment",
         // "http://localhost:5000/sentiment",
         {
           inputs: sentimentInput,
