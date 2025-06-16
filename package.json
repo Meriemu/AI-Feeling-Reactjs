@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "detect-human-feeling--reactjs",
   "version": "0.1.0",
   "private": true,
@@ -45,5 +46,5 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-    "type": "module"
+  "type": "module"
 }
