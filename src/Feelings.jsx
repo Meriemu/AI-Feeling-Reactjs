@@ -12,10 +12,13 @@ const Feelings = () => {
     setLoader(true);
 
     try {
-      // const response = await axios.post("/sentiment", {
-      const response = await axios.post("http://localhost:5000/sentiment", {
-        inputs: sentimentInput,
-      });
+      const response = await axios.post(
+        "/sentiment",
+        // "http://localhost:5000/sentiment",
+        {
+          inputs: sentimentInput,
+        }
+      );
 
       const labels = (res) => {
         switch (res) {
@@ -32,7 +35,7 @@ const Feelings = () => {
       const res = response.data[0].reduce(
         (accu, lab) => accu.score > lab.score && accu
       ).label;
-
+  
       const randomDataResult =
         labels(res) === "negative"
           ? randomFeelings.Negative[
@@ -50,8 +53,8 @@ const Feelings = () => {
 
       setResult(randomDataResult);
     } catch (error) {
-      console.error("ERROR :", error);
-      setResult(`Error:  ${error.message}`);
+      console.error("ERROR", error);
+      setResult(`ERROR: ${error.message}`);
     } finally {
       setLoader(false);
     }
@@ -68,7 +71,6 @@ const Feelings = () => {
             value={sentimentInput}
             onChange={(e) => setSentimentInput(e.target.value)}
             aria-live="polite"
-            placeholder=" "
             required
           />
           <label htmlFor="feeling_text" className="feeling__label">
