@@ -74,7 +74,7 @@ const Feelings = () => {
             required
           />
           <label htmlFor="feeling_text" className="feeling__label">
-            Express yourself ...
+            Express yourself
           </label>
           <div className="bar"></div>
         </div>
