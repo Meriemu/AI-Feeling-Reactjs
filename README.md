@@ -30,7 +30,7 @@
 
 ---
 
-## Quels langages utilisés ? / What languages are used? 💻
+## Quels langages sont utilisés ? / What languages are used? 💻
 
 ### Langages de programmation / Programming Languages:
 - **JavaScript (ES6+)** - Langage principal pour le frontend et backend / Main language for frontend and backend
