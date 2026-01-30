@@ -62,17 +62,17 @@ npm install
 
 3. **Configurer les variables d'environnement / Set up environment variables**
 
-Créer un fichier `.env` à la racine du projet avec votre token Hugging Face :
-Create a `.env` file in the root directory with your Hugging Face token:
+Créer un fichier `.env` à la racine du projet avec votre token Hugging Face :  
+*Create a `.env` file in the root directory with your Hugging Face token:*
 
 ```
 HF_API_TOKEN=your_huggingface_api_token_here
 ```
 
 Pour obtenir un token gratuit / To get a free token:
-- Créez un compte sur [Hugging Face](https://huggingface.co/)
-- Allez dans Settings > Access Tokens
-- Créez un nouveau token / Create a new token
+1. Créez un compte sur [Hugging Face](https://huggingface.co/) / Create an account on Hugging Face
+2. Allez dans Settings > Access Tokens / Go to Settings > Access Tokens
+3. Créez un nouveau token / Create a new token
 
 ---
 
@@ -84,14 +84,13 @@ Pour obtenir un token gratuit / To get a free token:
 ```bash
 npm start
 ```
-Ouvre l'application sur [http://localhost:3000](http://localhost:3000)
-Opens the app at [http://localhost:3000](http://localhost:3000)
+*Ouvre l'application sur / Opens the app at* [http://localhost:3000](http://localhost:3000)
 
 **Démarrer le serveur backend / Start the backend server:**
 ```bash
 node api/server.js
 ```
-Le serveur tourne sur le port 5000 / The server runs on port 5000
+*Le serveur tourne sur le port 5000 / The server runs on port 5000*
 
 ---
 
@@ -206,7 +205,7 @@ Ce projet peut être déployé sur / This project can be deployed on:
 
 ## Auteur / Author 👩‍💻
 
-**Meryem ACHEMLAL** ツ
+**Meryem ACHEMLAL**
 
 ---
 
