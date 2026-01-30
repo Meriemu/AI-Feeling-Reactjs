@@ -30,6 +30,23 @@
 
 ---
 
+## Quels langages utilisés ? / What languages are used? 💻
+
+### Langages de programmation / Programming Languages:
+- **JavaScript (ES6+)** - Langage principal pour le frontend et backend / Main language for frontend and backend
+- **JSX** - Extension React pour la syntaxe des composants / React extension for component syntax
+- **SCSS (Sass)** - Préprocesseur CSS pour le styling / CSS preprocessor for styling
+- **HTML5** - Structure des pages web / Web page structure
+- **JSON** - Configuration et échange de données / Configuration and data exchange
+
+### Détails techniques / Technical Details:
+- 📱 **Frontend**: JavaScript/JSX avec React 18
+- 🔧 **Backend**: Node.js avec Express.js
+- 🎨 **Styles**: SCSS (Sass)
+- 📦 **Gestionnaire de paquets**: npm
+
+---
+
 ## Technologies utilisées / Technologies used 🛠️
 
 - **React.js** - Frontend framework
